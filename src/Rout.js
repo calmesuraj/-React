@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Form from "./Form/Form";
 import Homepage from "./Pages/HomePage";
 import SignUpPage from "./Pages/SignUpPage";
+import ErrorPage from "./Pages/ErrorPage";
 
 const AppRoutes = () => {
   return (
@@ -10,7 +11,8 @@ const AppRoutes = () => {
       <Switch>
         <Route path="/" exact component={Form} />
         <Route path="/home" component={Homepage} />
-        <Route path="/error" component={SignUpPage} />
+        <Route path="/registration" component={SignUpPage} />
+        <Route path="/error" component={ErrorPage} />
       </Switch>
     </Router>
   );

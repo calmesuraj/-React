@@ -68,7 +68,7 @@ const Form = () => {
       />
       {error && <p style={{ color: "red" }}>{error}</p>}
       <CustomButton text="Sign On" /> &nbsp; &nbsp; &nbsp;
-      <Link to="/error" className="custom-button">
+      <Link to="/registration" className="custom-button">
         Sign Up
       </Link>
       {/* Sign Up link */}
