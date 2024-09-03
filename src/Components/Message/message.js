@@ -6,6 +6,8 @@ export const message = {
   CreateNewuser: "You can create Your Username and Password Here",
   SignOn: "SignOn",
   Create: "Create",
+  ErrorUername: "Please enter username .",
+  ErrorPassword: "Please enter password.",
 };
 
 const getMessage = (key) => {
