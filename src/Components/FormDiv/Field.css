@@ -4,7 +4,7 @@
   }
   
   .custom-input {
-    width: 37%;/* Make input take up full width of container */
+    width: 70%;/* Make input take up full width of container */
     height: 20px;
     padding: 10px; /* Padding inside the input */
     margin-top: 8px; /* Add a little space at the top of the input field */
@@ -30,4 +30,6 @@
     background-color: #f5f5f5; /* Light gray background when disabled */
     cursor: not-allowed;
   }
-  
+  .custom-input-label{
+    font-size: 12px;
+  }
