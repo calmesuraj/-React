@@ -52,7 +52,7 @@ const Form = () => {
   };
 
   return (
-    <Layout onSubmit={handleSubmit}>
+    <Layout onSubmit={handleSubmit} className="layout">
       <PageTitle title={getMessage("LoginTitle")} />
       <Field
         placeholder="User Name"
@@ -66,8 +66,8 @@ const Form = () => {
         value={pass}
         onChange={handlePassword}
       />
-      {error && <p style={{ color: "red" }}>{error}</p>}
-      <CustomButton text="Sign On" /> &nbsp; &nbsp; &nbsp;
+      {error && <p style={{ color: "red" }}>{error}</p>}&nbsp;&nbsp;&nbsp;&nbsp;
+      <CustomButton text="Sign On" /> &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
       <Link to="/registration" className="custom-button">
         Sign Up
       </Link>
