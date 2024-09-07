@@ -55,13 +55,13 @@ const Form = () => {
     <Layout onSubmit={handleSubmit} className="layout">
       <PageTitle title={getMessage("LoginTitle")} />
       <Field
-        placeholder="User Name"
+        label="User Name"
         type="text"
         value={user}
         onChange={handleUserName}
       />
       <Field
-        placeholder="Password"
+        label="Password"
         type="password"
         value={pass}
         onChange={handlePassword}

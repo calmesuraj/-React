@@ -9,14 +9,17 @@ const Homepage = () => {
       <PageTitle title={getMessage("Authenticated")} />
       <p></p>
       <div className="Home-div">
-        <Field label={"First Name "} />
+        <Field label={"First Name "} style={{ margin: "20px 0" }} />
+        &nbsp;&nbsp;&nbsp;
         <Field label={"Last Name "} />
       </div>
-      <div className="Home-div-2">
+      <div className="Home-div">
+        &nbsp;&nbsp;&nbsp;
         <Field
           label={"Email "}
           style={{ marginLeft: "-12px", paddingRight: "-10px" }}
         />
+        &nbsp;&nbsp;&nbsp;
         <Field label={"Phone "} />
       </div>
     </Layout>
