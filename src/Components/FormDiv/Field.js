@@ -1,4 +1,5 @@
 import "./Field.css";
+
 const Field = ({
   label,
   type = "text",
@@ -9,17 +10,22 @@ const Field = ({
   disabled,
 }) => {
   return (
-    <div className="custom-input-wrapper" style={style}>
-      {label && <label className="custom-input-label">{label}</label>}
-      {/* Render label if provided */}
+    <div
+      className={`custom-input-wrapper ${value ? "filled" : ""}`}
+      style={style}
+    >
       <input
         type={type}
         value={value}
         onChange={onChange}
-        placeholder={placeholder}
+        placeholder=" " // Keep placeholder empty to avoid duplication with label
         className="custom-input"
         disabled={disabled}
       />
+      {label && (
+        <label className="custom-input-label">{placeholder || label}</label>
+      )}
+      {/* Label acts as the floating placeholder */}
     </div>
   );
 };
