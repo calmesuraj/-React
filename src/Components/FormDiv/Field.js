@@ -10,10 +10,7 @@ const Field = ({
   disabled,
 }) => {
   return (
-    <div
-      className={`custom-input-wrapper ${value ? "filled" : ""}`}
-      style={style}
-    >
+    <div className="custom-input-wrapper" style={style}>
       <input
         type={type}
         value={value}
@@ -21,6 +18,7 @@ const Field = ({
         placeholder=" " // Keep placeholder empty to avoid duplication with label
         className="custom-input"
         disabled={disabled}
+        required
       />
       {label && (
         <label className="custom-input-label">{placeholder || label}</label>

@@ -46,14 +46,14 @@ const SignUpPage = () => {
     <Layout onSubmit={handleSubmit}>
       <PageTitle title={getMessage("CreateNewuser")} />
       <Field
-        placeholder="Create UserName"
+        label="User Name"
         type="text"
         value={userNew}
         onChange={handleUserName}
       />
       {errorUsername && <p style={{ color: "red" }}>{errorUsername}</p>}
       <Field
-        placeholder="Create Password"
+        label="Password"
         type="password"
         value={passNew}
         onChange={handlePassword}
