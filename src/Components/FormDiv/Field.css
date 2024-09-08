@@ -1,8 +1,11 @@
+/* Wrapper for input and label */
 .custom-input-wrapper {
   position: relative;
   margin: 20px 0;
+  display:flex
 }
 
+/* Input field */
 .custom-input {
   width: 100%;/* Make input take up full width of container */
     height: 35px;
@@ -15,25 +18,33 @@
     transition: border-color 0.3s ease; /* Smooth transition for border color on focus */
 }
 
-.custom-input:focus {
-  border-color: #007bff;
-}
-
+/* Default label positioning (on top of the input) */
 .custom-input-label {
   position: absolute;
+  top: 50%; /* Vertically center the label */
   left: 10px;
-  top: 50%;
-  transform: translateY(-50%);
-  background-color: white;
+  font-size: 16px;
   color: #aaa;
-  padding: 0 5px;
-  transition: 0.2s;
-  pointer-events: none;
+  pointer-events: none; /* Make the label non-clickable */
+  transform: translateY(-50%);
+  transition: all 0.2s ease-in-out;
 }
 
-.custom-input-wrapper.filled .custom-input-label,
+/* Float the label when the input is focused */
 .custom-input:focus + .custom-input-label {
-  top: -10px;
+  top: -12px; /* Move the label above the input */
   font-size: 12px;
   color: #007bff;
+}
+
+/* Float the label when the input is not empty (no placeholder shown) */
+.custom-input:not(:placeholder-shown) + .custom-input-label {
+  top: -12px; /* Move the label above the input */
+  font-size: 12px;
+  color: #007bff;
+}
+
+/* Apply focus styles to the input field itself */
+.custom-input:focus {
+  border-color: #007bff;
 }
