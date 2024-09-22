@@ -3,3 +3,36 @@
     flex-wrap:wrap;
 }
 
+@media (min-width: 1024px) {
+    .space {
+      display: inline; /* Ensure it's visible on larger screens */
+    }
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .space {
+        display: none; /* Hide the space on smaller devices */
+      }
+      .home-form{
+        padding-left:73px;
+      }
+  }
+
+  @media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .space {
+        display: none; /* Hide the space on smaller devices */
+      }
+      .home-form{
+        padding-left:57px;
+      }
+  }
+
+  @media only screen and (min-width: 600px) {
+    .space {
+        display: none; /* Hide the space on smaller devices */
+      }
+      .home-form{
+        padding-left:57px;
+      }
+  }
