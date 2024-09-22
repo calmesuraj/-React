@@ -11,29 +11,31 @@ const Homepage = () => {
   return (
     <Layout onSubmit={handleHomeSubmit}>
       <PageTitle title={getMessage("Authenticated")} />
-      <div className="Home-div">
-        &nbsp;&nbsp;&nbsp;
-        <Field label={"First Name"} />
-        &nbsp;&nbsp;&nbsp;&nbsp;
-        <Field label={"Last Name"} />
-      </div>
-      <div className="Home-div">
-        &nbsp;&nbsp;&nbsp;
-        <Field label={"Phone"} />
-        &nbsp;&nbsp;&nbsp;&nbsp;
-        <Field label={"Email"} />
-      </div>
-      <div className="Home-div">
-        &nbsp;&nbsp;&nbsp;
-        <Field label={"City"} />
-        &nbsp;&nbsp;&nbsp;&nbsp;
-        <Field label={"State"} />
-      </div>
-      <div className="Home-div">
-        &nbsp;&nbsp;&nbsp;
-        <Field label={"Address"} />
-        &nbsp;&nbsp;&nbsp;&nbsp;
-        <Field label={"ZipCode"} />
+      <div className="home-form">
+        <div className="Home-div">
+          <span className="space">&nbsp;&nbsp;&nbsp;</span>
+          <Field label={"First Name"} />
+          <span> &nbsp;&nbsp;&nbsp;&nbsp;</span>
+          <Field label={"Last Name"} />
+        </div>
+        <div className="Home-div">
+          <span className="space">&nbsp;&nbsp;&nbsp;</span>
+          <Field label={"Phone"} />
+          <span> &nbsp;&nbsp;&nbsp;&nbsp;</span>
+          <Field label={"Email"} />
+        </div>
+        <div className="Home-div">
+          <span className="space">&nbsp;&nbsp;&nbsp;</span>
+          <Field label={"City"} />
+          <span> &nbsp;&nbsp;&nbsp;&nbsp;</span>
+          <Field label={"State"} />
+        </div>
+        <div className="Home-div">
+          <span className="space">&nbsp;&nbsp;&nbsp;</span>
+          <Field label={"Address"} />
+          <span> &nbsp;&nbsp;&nbsp;&nbsp;</span>
+          <Field label={"ZipCode"} />
+        </div>
       </div>
       <CustomButton text="Submit" />
     </Layout>
